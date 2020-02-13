@@ -1,0 +1,44 @@
+@media (max-width: 1170px) {
+  body .header-window .header-slider .header .container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 800px) {
+  body .header-window .header-slider .header .container {
+    max-width: 500px;
+  }
+  body .header-window .header-slider .header .container .header-text .header-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  body .header-window .header-slider .header {
+    padding-top: 40px;
+  }
+  body .header-window .header-slider .header .container {
+    max-width: 300px;
+  }
+  body .header-window .header-slider .header .container .header-text .header-title {
+    font-size: 14px;
+  }
+  body .header-window .header-slider .header .container .header-text .header-subtitle {
+    font-size: 23px;
+  }
+  body .header-window .header-slider .header .container .header-text .header-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .header-window .header-slider .header .container .header-text .header-button button {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=media-queries.css.map */

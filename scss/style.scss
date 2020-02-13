@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    min-height: 1100px;
+    font-family: 'Roboto', sans-serif;
+
+    .slider-buttons__clone {
+        display: flex;
+        justify-content: space-between;
+        min-width: 170px;
+        position: absolute;
+
+        .previous-arrow,
+        .next-arrow {
+            cursor: pointer;
+        }
+    }
+
+    .header-window {
+        max-width: 1920px;
+        overflow: hidden;
+
+        .slider-buttons {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            transition: ease-in-out 1s;
+            top: 500px;
+            min-width: 170px;
+            z-index: 99;
+
+            .previous-arrow,
+            .next-arrow {
+                cursor: pointer;
+            }
+
+        }
+
+        .header-slider {
+            display: flex;
+
+            .header {
+                padding-top: 100px;
+                background: url(../img/1.png) no-repeat top;
+                min-width: 100%;
+                display: flex;
+                justify-content: flex-start;
+
+                .container {
+                    max-width: 1170px;
+                    margin: auto;
+
+                    .header-text {
+                        color: #fff;
+                        max-width: 837px;
+                        position: relative;
+
+                        .header-title {
+                            font-size: 30px;
+                            margin-bottom: 60px;
+
+                            span {
+                                padding-bottom: 3px;
+                                border-bottom: 3px solid #FAB578;
+                                fill: linear-gradient(red, blue);
+                            }
+                        }
+
+                        .header-subtitle {
+                            font-size: 25px;
+                            margin-bottom: 60px;
+                            font-weight: 300;
+                            // max-width: 640px;
+                        }
+
+                        .header-button {
+                            margin-bottom: 220px;
+
+                            button {
+                                padding: 12px 40px;
+                                border-radius: 50px;
+                                border: none;
+                                outline: none;
+                                background: linear-gradient(90deg, #FDA085 0%, #F6D365 100%);
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #434242;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                &.second {
+                    .container {
+                        .header-text {
+                            .header-title {
+                                span {
+                                    border-bottom: 3px solid #C367ED;
+                                }
+                            }
+                        }
+
+                    }
+
+                    background: url(../img/2.png) no-repeat top;
+                }
+
+                &.third {
+                    .container {
+                        .header-text {
+                            .header-title {
+                                span {
+                                    border-bottom: 3px solid #3CFB7D;
+                                }
+                            }
+                        }
+
+                    }
+
+                    background: url(../img/3.png) no-repeat top;
+
+                }
+
+                &.fourth {
+                    .container {
+                        .header-text {
+                            .header-title {
+                                span {
+                                    border-bottom: 3px solid #FA523A;
+                                }
+                            }
+                        }
+
+                    }
+
+                    background: url(../img/4.png) no-repeat top;
+
+                }
+            }
+        }
+    }
+}
